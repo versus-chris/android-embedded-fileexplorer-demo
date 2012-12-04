@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView  
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content" 
+      android:text="@string/hello"
+      />
+    
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Toogle File Explorer"
+      android:onClick="toogleFileExplorer"
+      />
+    
+    <include
+      layout="@layout/generic_file_explorer"
+      android:id="@+id/file_explorer_container"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@+id/player_edit_player_photo_label"
+      android:layout_margin="5dip"
+     
+      />
+    
+</LinearLayout>
